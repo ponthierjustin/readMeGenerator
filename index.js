@@ -1,42 +1,44 @@
 // require fs
 // require inquirier
-const fs = require('fs');
-const inquirer = require('inquirer');
-
-
+const fs = require("fs");
+const inquirer = require("inquirer");
 
 // array of questions for user
 //https://www.npmjs.com/package/inquirer#questions
-const questions = inquirer.prompt([
+const questions = inquirer
+  .prompt([
     {
-        type: 'input',
-        name: 'userName',
-        message: 'what is your username?',
+      type: "input",
+      name: "userName",
+      message: "what is your username?",
     },
     {
-        type: 'input',
-        name: 'email',
-        message: 'what is your email?',
+      type: "input",
+      name: "email",
+      message: "what is your email?",
     },
     {
-        type: 'input',
-        name: 'projectName',
-        message: 'what is your project name?',
+      type: "input",
+      name: "projectName",
+      message: "what is your project name?",
     },
     {
-        type: 'input',
-        name: 'shortDesc',
-        message: 'add a short desciprion of your project',
+      type: "input",
+      name: "shortDesc",
+      message: "add a short desciprion of your project",
     },
     {
-        type: 'confirm',
-        name: 'mLicense',
-        message: 'would you like to add a MIT license?',
+      type: "confirm",
+      name: "mLicense",
+      message: "would you like to add a MIT license?",
     },
-])
-.then(data => {
-    console.info(data);
-});
+  ])
+  .then((data) => {
+    fs.writeFile("README.md", JSON.stringify(questions.data), 'utf8', (err) => {
+        if (err) throw err;
+        console.log(data);
+      });
+  });
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -45,9 +47,7 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
-    // use the inquirier package
-
+  // use the inquirier package
 }
 
 // function call to initialize program
