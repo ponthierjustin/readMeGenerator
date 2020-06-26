@@ -9,39 +9,37 @@ const questions = inquirer
   .prompt([
     {
       type: "input",
-      name: "userName",
-      message: "what is your username?",
+      name: "username",
+      message: "What is your GitHub username?",
     },
     {
       type: "input",
       name: "email",
-      message: "what is your email?",
+      message: "What is your email?",
     },
     {
       type: "input",
-      name: "projectName",
-      message: "what is your project name?",
+      name: "title",
+      message: "What's the title of your project name?",
     },
     {
       type: "input",
-      name: "shortDesc",
-      message: "add a short desciprion of your project",
+      name: "description",
+      message: "Give us a short desciprion of your project.",
     },
     {
       type: "confirm",
-      name: "mLicense",
+      name: "license",
       message: "would you like to add a MIT license?",
+      value: 
     },
   ])
   .then((data) => {
-    fs.writeFile("README.md", JSON.stringify(questions.data), 'utf8', (err) => {
-        if (err) throw err;
-        console.log(data);
-      });
-  });
+    writeToFile
 
 // function to write README file
 function writeToFile(fileName, data) {
+  fs.writeFile('')
 }
 // use the fs package
 
