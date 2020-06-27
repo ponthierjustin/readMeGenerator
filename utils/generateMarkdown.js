@@ -4,10 +4,11 @@ function generateMarkdown(data) {
   return `# ${title}
 
   ## Description 
+
   ${description}
 
   ## Table of Contents
-  
+
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -17,6 +18,9 @@ function generateMarkdown(data) {
   
 
   ## Installation
+  Clone this repository: [Github Repo](https://github.com/${username}/${title})
+
+  
 
 
   ## Usage
@@ -27,10 +31,14 @@ function generateMarkdown(data) {
 
   ## License
 
+  ${license}
+
 
   ## Questions
+
   ${email}
-  [Github Repo]((https://github.com/${username})
+
+  [Github Repo](https://github.com/${username})
 
 
 
