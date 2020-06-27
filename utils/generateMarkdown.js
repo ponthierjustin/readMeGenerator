@@ -1,6 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const { username, email, title, description, license } = data;
+  const { username, email, title, description, license, dependencies, contribution, test, usage } = data;
   return `# ${title}
 
   ## Description 
@@ -20,14 +20,24 @@ function generateMarkdown(data) {
   ## Installation
   Clone this repository: [Github Repo](https://github.com/${username}/${title})
 
+  Install these dependencies: 
+  
+  npm install ${dependencies}
+
   
 
 
   ## Usage
 
+  ${usage}
+
   ## Contributions
 
+  ${contribution}
+
   ## Tests
+
+  ${test}
 
   ## License
 
@@ -39,8 +49,6 @@ function generateMarkdown(data) {
   ${email}
 
   [Github Repo](https://github.com/${username})
-
-
 
 `;
 }

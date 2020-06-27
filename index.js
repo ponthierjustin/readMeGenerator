@@ -25,23 +25,68 @@ const questions = inquirer
     },
     {
       type: "input",
+      name: "dependencies",
+      message:
+        "Which dependencies should be installed to properly use the program?",
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "Add a link of of the tested site.",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Tell us the usage of this application",
+    },
+    {
+      type: "input",
+      name: "contribution",
+      message: "Who were your main contributers to this project?",
+    },
+    {
+      type: "input",
       name: "description",
       message: "Give us a short desciprion of your project.",
     },
     {
       type: "checkbox",
       name: "license",
-      message: "would you like to add a license?",
+      message: "Select a license of choice.",
       choices: [
         {
           name: "MIT",
-          value:
-            'MIT License Copyright (c) [2020]'   + '\n ' +   'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:' + '\n ' + 'The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.'   + '\n ' +    ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+          value: `![License](https://img.shields.io/badge/License-MIT-black.svg)
+            
+ MIT License
+
+ Copyright (c) [2020] [Justin Ponthier]
+      
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+          
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+          
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`,
         },
-          {
-              name: "MITBadge",
-              value: "(https://img.shields.io/badge/License-MIT-black.svg)"
-      },
+        {
+          name: "Apache",
+          value: `![License](https://img.shields.io/badge/License-Apache-black.svg)
+            
+Apache 2.0 License
+
+Copyright [2020]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.`,
+        },
       ],
     },
   ])
