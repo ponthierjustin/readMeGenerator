@@ -58,9 +58,9 @@ const questions = inquirer
           name: "MIT",
           value: `![License](https://img.shields.io/badge/License-MIT-black.svg)
             
- MIT License
+MIT License
 
- Copyright (c) [2020] [Justin Ponthier]
+Copyright (c) [2020] [Justin Ponthier]
       
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
           
@@ -86,6 +86,12 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.`,
+        },
+        {
+          name: "GNU",
+          value: `![License](https://img.shields.io/badge/License-GNU-black.svg)
+            
+[GNU License](https://choosealicense.com/licenses/gpl-3.0/#)`,
         },
       ],
     },

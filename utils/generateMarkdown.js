@@ -4,10 +4,12 @@ function generateMarkdown(data) {
   return `# ${title}
 
   ## Description 
+  
 
   ${description}
 
   ## Table of Contents
+  <hr>
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -18,6 +20,8 @@ function generateMarkdown(data) {
   
 
   ## Installation
+
+
   Clone this repository: [Github Repo](https://github.com/${username}/${title})
 
   Install these dependencies: 
@@ -29,22 +33,29 @@ function generateMarkdown(data) {
 
   ## Usage
 
+
   ${usage}
 
   ## Contributions
+
 
   ${contribution}
 
   ## Tests
 
+
   ${test}
 
   ## License
+
 
   ${license}
 
 
   ## Questions
+
+
+  Send a short, but descriptive email:
 
   ${email}
 
