@@ -9,7 +9,7 @@ function generateMarkdown(data) {
   ${description}
 
   ## Table of Contents
-  <hr>
+ 
 
   * [Installation](#installation)
   * [Usage](#usage)

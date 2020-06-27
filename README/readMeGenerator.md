@@ -1,12 +1,12 @@
 # readMeGenerator
 
   ## Description 
-
+  
 
   Allows developers to make presentable ReadMe documents in the command line for their user ready projects.
 
   ## Table of Contents
-
+ 
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -36,7 +36,7 @@
   ## Contributions
 
 
-  Solo project
+  Solo Project
 
   ## Tests
 
@@ -44,7 +44,7 @@
   https://github.com/ponthierjustin/readMeGenerator
 
   ## License
-  
+
 
   ![License](https://img.shields.io/badge/License-MIT-black.svg)
             
